@@ -2,18 +2,12 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import MyComponent from './components/learn/MyComponent'
+import SecondComponent from './components/learn/SecondComponent'
 
-function App() {
+const App = () =>  {
   const [count, setCount] = useState(0)
 
-
-  // function myFunction (){
-  //   console.log("run my function")
-  // }
-  const myFunction = () => {
-    console.log("run my function11")
-  }
-  myFunction()
 
   return (
     <>
@@ -26,6 +20,8 @@ function App() {
         </a>
       </div>
       <h1>Quang App</h1>
+      <MyComponent/>
+      <SecondComponent/>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
